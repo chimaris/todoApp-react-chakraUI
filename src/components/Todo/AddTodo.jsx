@@ -1,4 +1,4 @@
-import { Button, HStack, Input } from '@chakra-ui/react'
+import { Button, Stack, Input, VStack } from '@chakra-ui/react'
 import React, { useRef } from 'react'
 
 const AddTodo = ({ addTodo, todos }) => {
@@ -19,10 +19,10 @@ const AddTodo = ({ addTodo, todos }) => {
     }
     return (
         <form onSubmit={submitHandler}>
-            <HStack mt='8' mb='8'>
+            <Stack mt='8' mb='8' direction={['column', 'row']} >
                 <Input variant='filled' size='lg' placeholder='Write your todo' ref={message} />
                 <Button type='submit' size='lg' colorScheme='purple' px='8'>Add Todo</Button>
-            </HStack>
+            </Stack>
         </form>
 
     )

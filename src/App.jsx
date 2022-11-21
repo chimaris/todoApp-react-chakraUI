@@ -5,15 +5,21 @@ import Pricing from './components/Pricing'
 
 import './App.css'
 import Todo from './components/Todo/Todo'
+import Vote from './components/Voting/Vote'
+import VoteProvider from './context/VoteProvider'
 
 
 function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <Header />
       <Pricing />
-      <Features />
+      <Features /> */}
+      <VoteProvider>
+        <Vote />
+      </VoteProvider>
+
       <Todo />
     </div>
   )

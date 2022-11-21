@@ -12,7 +12,7 @@ const boxStyle = {
     p: '4',
 }
 const headingStyle = {
-    fontSize: ['20px', '20px', '40px'],
+    fontSize: ['30px', '30px', '40px'],
     mb: '8', // 8 * 4px = 32px
     fontWeight: 'extrabold',
     bgGradient: 'linear(to-l, pink.500, pink.300, purple.500)',
